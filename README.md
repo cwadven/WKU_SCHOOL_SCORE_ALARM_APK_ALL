@@ -2,27 +2,27 @@
 
 <h3 align="center">[[아이콘]]</h3>
 <p>
-<img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/asset/score.png" width="100"/>
+<img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/assets/score.png" width="100"/>
 </p>
 
 <h3 align="center">[[메인페이지]]</h3>
 <p>
-<img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/asset/page1.jpg?raw=true"/>
+<img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/assets/page1.jpg?raw=true"/>
 </p>
 
 <h3 align="center">[[알림전송1]]</h3>
 <p>
-<img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/asset/page2.jpg?raw=true"/>
+<img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/assets/page2.jpg?raw=true"/>
 </p>
 
 <h3 align="center">[[알림전송2]]</h3>
 <p>
-<img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/asset/page3.jpg?raw=true"/>
+<img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/assets/page3.jpg?raw=true"/>
 </p>
 
 ## 어플 다운로드 링크 및 사용법
 
-[원광대 성적알림이 어플 다운로드](https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/asset/wkuscore.zip "원광대 성적알림이 어플 다운로드")
+[원광대 성적알림이 어플 다운로드](https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/assets/wkuscore.zip "원광대 성적알림이 어플 다운로드")
 
 ### 사용법
 
