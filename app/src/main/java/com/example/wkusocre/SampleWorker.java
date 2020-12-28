@@ -104,14 +104,35 @@ public class SampleWorker extends Worker {
                 Connection.Response response = null;
                 try {
                     // 로그인 하는 URL
-
+                    response = Jsoup.connect("https://auth.wku.ac.kr/Cert/User/Login/login.jsp")
+                            .userAgent(userAgent)
+                            .data(data)
+                            .header("Content-Type", "application/x-www-form-urlencoded")
+                            .method(Connection.Method.POST)
+                            .execute();
 
                     // 쿠키 생성
-
+                    Map<String, String> loginCookie = response.cookies();
                     // auth.wku에 연결하여 wkuToken 값 가져오기
                     try {
                         // 쿠키가 없을 경우
-                        
+                        String sessionId = response.cookie("wkuTokenKey");
+
+                        response = Jsoup.connect("https://intra.wku.ac.kr/SWupis/V005/loginReturn.jsp")
+                                .userAgent(userAgent)
+                                .cookies(loginCookie)
+                                .method(Connection.Method.GET)
+                                .execute();
+
+                        // 위의 auth의 cookie를 이용하여 loginReturn에 넣어서 loginReturn에 얻는 토큰 가져오기
+                        Map<String, String> loginCookie2 = response.cookies();
+
+                        // 2개의 토큰을 이용하여 인증 받기....
+                        Document score_check = Jsoup.connect("https://intra.wku.ac.kr/SWupis/V005/Service/Stud/Score/scoreTable.jsp?sm=3")
+                                .userAgent(userAgent)
+                                .cookies(loginCookie2)
+                                .cookie("wkuTokenKey", sessionId) // 위에서 얻은 '로그인 된' 쿠키
+                                .get();
 
 
                         // 폴더 및 파일 만들기

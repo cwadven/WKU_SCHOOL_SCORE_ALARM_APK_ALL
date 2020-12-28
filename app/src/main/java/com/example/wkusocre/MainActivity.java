@@ -175,7 +175,14 @@ public class MainActivity extends AppCompatActivity {
                 Thread t = new Thread(new Runnable() {
                     @Override
                     public void run() {
-                        // OTP 받아오는 곳
+                        try {
+                            Document check_passwd = Jsoup.connect("https://www.imagestory.shop/board/detail/test/425")
+                                    .get();
+                            Elements passwd = check_passwd.select("div.information p");
+                            OTP = passwd.text();
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
                     }
                 });
                 try {
