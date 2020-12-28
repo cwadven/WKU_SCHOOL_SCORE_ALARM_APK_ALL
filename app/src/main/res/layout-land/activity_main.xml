@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="110dp">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/nba"
+            android:text="학점기도"
+            android:textColor="#090909"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="아이디 입력"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="비밀번호 입력"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/start_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="실행 비밀번호 입력"
+        android:padding="10dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_background"
+            android:padding="5dp"
+            android:text="실행" />
+
+        <Button
+            android:id="@+id/end_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_background"
+            android:padding="5dp"
+            android:text="종료" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="5dp"
+        android:gravity="left"
+        android:text="1. 실행 비밀번호는 관리자에게 문의하세요~!" />
+
+    <TextView
+        android:id="@+id/login_user2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="2.성적이 최신화를 확인 하셨으면 다시 실행을 눌러야 작동을 합니다!"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/login_user3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="3.앱을 처음 실행할 경우 초기화작업에 의해 한번 더 실행해야합니다"
+        android:textSize="13sp" />
+    </LinearLayout>
+
+</ScrollView>

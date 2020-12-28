@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <TextView
+            android:id="@+id/app_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="3dp"
+            android:fontFamily="@font/nba"
+            android:text="학점기도"
+            android:textColor="#090909"
+            android:textSize="40dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/img"
+
+
+            />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="아이디 입력"
+        android:padding="10dp"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="비밀번호 입력"
+        android:padding="10dp"
+        android:password="true"
+        android:textColor="#000000" />
+
+    <EditText
+        android:id="@+id/start_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="실행 비밀번호 입력"
+        android:numeric="decimal"
+        android:padding="10dp"
+        android:textColor="#000000" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/start_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="@drawable/button_background"
+            android:padding="5dp"
+            android:text="실행" />
+
+        <Button
+            android:id="@+id/end_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:background="#F54842"
+            android:padding="5dp"
+            android:text="종료"
+            app:backgroundTint="#E43838" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_margin="5dp"
+        android:gravity="left"
+        android:text="1. 실행 비밀번호는 관리자에게 문의하세요~!" />
+
+    <TextView
+        android:id="@+id/login_user2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="2. 성적이 최신화를 확인 하셨으면 다시 실행을 눌러야 작동을 합니다!"
+        android:textSize="13sp" />
+
+</LinearLayout>
