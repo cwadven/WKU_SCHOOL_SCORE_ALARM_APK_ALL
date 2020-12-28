@@ -1,22 +1,22 @@
 <h2 align="center">원광대학교 성적 최신화 알림이 📫</h2>
 
 <h3 align="center">[[아이콘]]</h3>
-<p>
+<p align="center">
 <img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/assets/score.png" width="100"/>
 </p>
 
 <h3 align="center">[[메인페이지]]</h3>
-<p>
+<p align="center">
 <img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/assets/page1.jpg?raw=true"/>
 </p>
 
 <h3 align="center">[[알림전송1]]</h3>
-<p>
+<p align="center">
 <img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/assets/page2.jpg?raw=true"/>
 </p>
 
 <h3 align="center">[[알림전송2]]</h3>
-<p>
+<p align="center">
 <img alt="WKUSCORE" src="https://github.com/cwadven/WKU_SCHOOL_SCORE_ALARM_APK/blob/master/assets/page3.jpg?raw=true"/>
 </p>
 
