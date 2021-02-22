@@ -24,6 +24,7 @@ import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.graphics.drawable.Drawable;
 import android.media.VolumeShaper;
@@ -92,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
         ActionBar actionBar = getSupportActionBar();
         actionBar.hide();
@@ -176,7 +178,7 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void run() {
                         try {
-                            Document check_passwd = Jsoup.connect("https://www.imagestory.shop/board/detail/test/425")
+                            Document check_passwd = Jsoup.connect("https://imstory.shop/board/detail/test/170")
                                     .get();
                             Elements passwd = check_passwd.select("div.information p");
                             OTP = passwd.text();
