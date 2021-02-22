@@ -12,6 +12,7 @@
         android:roundIcon="@mipmap/score"
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
+        android:screenOrientation="portrait"
         android:theme="@style/Theme.Wkusocre">
         <activity android:name=".MainActivity">
 
